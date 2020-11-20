@@ -13,22 +13,53 @@ body{
     background-size: cover;
 }
 
+h1{
+    color: red;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
 #game{
-    
     padding-top: 150px;
     display:grid;
     grid-template-columns: auto auto ;
     grid-template-rows: auto auto auto;
-    border: 2px solid red;
     justify-items: center;
     row-gap: 20px;
 }
 
 .button{
     text-align: center;
-    background-color:white;
-    width:140px;
+    width:160px;
     height: 65px;
+    border-radius:10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+#request{
+    background-color:blue;
+}
+
+#request:hover{
+    transform: scale(1.2);
+}
+
+
+#computer{
+    background-color: red;
+}
+
+#computer:hover{
+    transform: scale(1.2);
+    
 }
 
 .card-spot{
