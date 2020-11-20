@@ -8,45 +8,28 @@
                 return randomNum;
             };
 
-            function firstClick () {
+            function drawCard () {
    
-               // document.getElementById("request").addEventListener("click",function  () {
-                    let userCard1=getRandomNum(1,11);
+               // document.getElementById("request").addEventListener("click",function  (usercard) {
+                    let userCard=getRandomNum(1,11);
                     
-                    if (userCard1 ===1) {document.getElementById("card-spot1").src = "img/one.png";}
-                    else if (userCard1 ===2) {document.getElementById("card-spot1").src = "img/two.png";}
-                    else if (userCard1 ===3) {document.getElementById("card-spot1").src = "img/three.png";}
-                    else if(userCard1 ===4) {document.getElementById("card-spot1").src = "img/four.png";}
-                    else if(userCard1 ===5) {document.getElementById("card-spot1").src = "img/five.png";}
-                    else if(userCard1 ===6) {document.getElementById("card-spot1").src="img/six.png";}
-                    else if(userCard1 ===7)  {document.getElementById("card-spot1").src="img/seven.png";}
-                    else if(userCard1 ===8) {document.getElementById("card-spot1").src="img/eight.png";}
-                    else if(userCard1 ===9) {document.getElementById("card-spot1").src="img/nine.png";}
-                    else if(userCard1 ===10) {document.getElementById("card-spot1").src="img/ten.png";}
-                    return userCard1;
+                    if (userCard ===1) {document.getElementById("card-spot1").src = "img/one.png";}
+                    else if (userCard ===2) {document.getElementById("card-spot1").src = "img/two.png";}
+                    else if (userCard ===3) {document.getElementById("card-spot1").src = "img/three.png";}
+                    else if(userCard===4) {document.getElementById("card-spot1").src = "img/four.png";}
+                    else if(userCard ===5) {document.getElementById("card-spot1").src = "img/five.png";}
+                    else if(userCard ===6) {document.getElementById("card-spot1").src="img/six.png";}
+                    else if(userCard ===7)  {document.getElementById("card-spot1").src="img/seven.png";}
+                    else if(userCard ===8) {document.getElementById("card-spot1").src="img/eight.png";}
+                    else if(userCard ===9) {document.getElementById("card-spot1").src="img/nine.png";}
+                    else if(userCard ===10) {document.getElementById("card-spot1").src="img/ten.png";}
+                    return userCard;
                // });
 
              }
              
-             function secondClick () {
-   
-                // document.getElementById("request").addEventListener("click",function  () {
-                    let userCard2=getRandomNum(1,11);
-                     
-                     if (userCard2 ===1) {document.getElementById("card-spot1").src = "img/one.png";}
-                     else if (userCard2 ===2) {document.getElementById("card-spot1").src = "img/two.png";}
-                     else if (userCard2 ===3) {document.getElementById("card-spot1").src = "img/three.png";}
-                     else if(userCard2 ===4) {document.getElementById("card-spot1").src = "img/four.png";}
-                     else if(userCard2 ===5) {document.getElementById("card-spot1").src = "img/five.png";}
-                     else if(userCard2 ===6) {document.getElementById("card-spot1").src="img/six.png";}
-                     else if(userCard2 ===7)  {document.getElementById("card-spot1").src="img/seven.png";}
-                     else if(userCard2 ===8) {document.getElementById("card-spot1").src="img/eight.png";}
-                     else if(userCard2 ===9) {document.getElementById("card-spot1").src="img/nine.png";}
-                     else if(userCard2 ===10) {document.getElementById("card-spot1").src="img/ten.png";}
-                    return userCard2;
-                // });
  
-              }
+              
 
     document.getElementById("computer").addEventListener("click",function () {
         let comptuterCard=getRandomNum(1,11);
@@ -67,16 +50,20 @@
     let timesClicked=0;
     let firstCard;
     let secondCard;
-    
+    let thirdCard;
     document.getElementById("request").addEventListener("click",function() {
         timesClicked++;
         if (timesClicked===1) {
-            firstCard=firstClick();  
+            firstCard=drawCard();  
             }
         else if (timesClicked===2) {
-            secondCard=secondClick();
+            secondCard=drawCard();
             console.log(firstCard);
             console.log(secondCard);
+        }
+        else if (timesClicked===3) {
+            thirdCard=drawCard();
+            console.log(thirdCard);
         }
     });
     
