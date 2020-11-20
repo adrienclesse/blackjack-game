@@ -1,0 +1,28 @@
+body{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game{
+    
+    padding-top: 150px;
+    display:grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    border: 2px solid red;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.button{
+    text-align: center;
+    background-color:white;
+    width:140px;
+    height: 65px;
+}
+
+.card-spot{
+    width: 130px;
+    height: 155px;
+}
