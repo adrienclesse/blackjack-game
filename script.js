@@ -54,6 +54,7 @@
     let thirdCard;
     let fourthCard;
     let fifthCard;
+    let sixthCard;
     document.getElementById("request").addEventListener("click",function() {
         timesClicked++;
         if (timesClicked===1) {
@@ -77,12 +78,17 @@
             fifthCard=drawCard();
             console.log(fifthCard);
         }
+        else if (timesClicked===6) {
+            sixthCard=drawCard();
+            console.log(sixthCard);
+        }
     
     if(timesClicked===1) {document.getElementById("info").innerHTML=firstCard;}
     else if(timesClicked===2) {document.getElementById("info").innerHTML=firstCard+secondCard;}
     else if(timesClicked===3) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard;}
     else if(timesClicked===4) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard+fourthCard;}
     else if(timesClicked===5) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard+fourthCard+fifthCard;}
+    else if(timesClicked===6) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard+fourthCard+fifthCard+sixthCard;}
 
     
 
@@ -94,6 +100,7 @@
     let thirdCard1;
     let fourthCard1;
     let fifthCard1;
+    let sixthCard1;
     document.getElementById("computer").addEventListener("click",function() {
         timesClicked1++;
         if (timesClicked1===1) {
@@ -118,12 +125,17 @@
             fifthCard1=computerDraw();
             console.log(fifthCard1);
         }
+        else if (timesClicked1===6) {
+            sixthCard1=computerDraw();
+            console.log(fifthCard1);
+        }
     
     if(timesClicked1===1) {document.getElementById("info1").innerHTML=firstCard1;}
     else if(timesClicked1===2) {document.getElementById("info1").innerHTML=firstCard1+secondCard1;}
     else if(timesClicked1===3) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1;}
     else if(timesClicked1===4) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1;}
     else if(timesClicked1===5) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1+fifthCard1;}
+    else if(timesClicked1===6) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1+fifthCard1+sixthCard1;}
 
     });
     document.getElementById("request").addEventListener("click",function() {
