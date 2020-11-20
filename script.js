@@ -1,4 +1,4 @@
-(function(){;
+(function(){
 
     let randomNum;
             function getRandomNum(min, max) {
@@ -12,7 +12,7 @@
    
                // document.getElementById("request").addEventListener("click",function  () {
                     let userCard1=getRandomNum(1,11);
-                    console.log(userCard1);
+                    
                     if (userCard1 ===1) {document.getElementById("card-spot1").src = "img/one.png";}
                     else if (userCard1 ===2) {document.getElementById("card-spot1").src = "img/two.png";}
                     else if (userCard1 ===3) {document.getElementById("card-spot1").src = "img/three.png";}
@@ -23,16 +23,16 @@
                     else if(userCard1 ===8) {document.getElementById("card-spot1").src="img/eight.png";}
                     else if(userCard1 ===9) {document.getElementById("card-spot1").src="img/nine.png";}
                     else if(userCard1 ===10) {document.getElementById("card-spot1").src="img/ten.png";}
-
+                    return userCard1;
                // });
 
              }
-
+             
              function secondClick () {
    
                 // document.getElementById("request").addEventListener("click",function  () {
-                     let userCard2=getRandomNum(1,11);
-                     console.log(userCard2);
+                    let userCard2=getRandomNum(1,11);
+                     
                      if (userCard2 ===1) {document.getElementById("card-spot1").src = "img/one.png";}
                      else if (userCard2 ===2) {document.getElementById("card-spot1").src = "img/two.png";}
                      else if (userCard2 ===3) {document.getElementById("card-spot1").src = "img/three.png";}
@@ -43,7 +43,7 @@
                      else if(userCard2 ===8) {document.getElementById("card-spot1").src="img/eight.png";}
                      else if(userCard2 ===9) {document.getElementById("card-spot1").src="img/nine.png";}
                      else if(userCard2 ===10) {document.getElementById("card-spot1").src="img/ten.png";}
- 
+                    return userCard2;
                 // });
  
               }
@@ -65,12 +65,21 @@
     });
 
     let timesClicked=0;
+    let firstCard;
+    let secondCard;
+    
     document.getElementById("request").addEventListener("click",function() {
         timesClicked++;
-        if (timesClicked===1) { firstClick();}
-        else if (timesClicked===2) {secondClick();}
+        if (timesClicked===1) {
+            firstCard=firstClick();  
+            }
+        else if (timesClicked===2) {
+            secondCard=secondClick();
+            console.log(firstCard);
+            console.log(secondCard);
+        }
     });
-
+    
  //  let timesClicked=0;
 //document.getElementById("request").click(function() {
 //timesClicked++;
