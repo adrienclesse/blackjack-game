@@ -7,15 +7,29 @@
     <link rel = "stylesheet"   type = "text/css"   href = "css/style.css" />
 </head>
 <body>
+    <div id="anim">
+        <img src="img/vip-blackjack.jpg" class="vip-background"></img>
+        <img src="img/neon-blackjack.jpg" class="neon-blackjack"></img>
+        <img src="img/b-j.jpg" class="bj"></img>
+        <img src="img/vip-blackjack.jpg" class="vip-background"></img>
+        <img src="img/neon-blackjack.jpg" class="neon-blackjack"></img>
+        <img src="img/b-j.jpg" class="bj"></img>
+        <img src="img/vip-blackjack.jpg" class="vip-background"></img>
+        <img src="img/neon-blackjack.jpg" class="neon-blackjack"></img>
+        <img src="img/b-j.jpg" class="bj"></img>
+        
+    </div>
+    
     <h1>Welcome to blackjack!</h1>
-    <h2>Pick up a card in the left pile pushing the blue button, then make the computer pick a card clicking the red button.  First one over 21 will lose. </h2>
+    <h2>Pick up your card in the left pile pushing the blue button, then make the computer pick a card clicking the red button and so on.  First one over 21 will lose.  If you reach 21 acurately, you win! </h2>
+    
     <div id="game">
         <button id="request" class="button">Request a card</button>
         <button id="computer" class="button">Computer's turn</button>
-        <img src="img/back-card.png" id="card-spot1" class="card-spot"></img>
+        <img src="img/blue-card.png" id="card-spot1" class="card-spot"></img>
         <img src="img/back-card.png" id="card-spot2" class="card-spot"></img>
-        <p id="info"></p>
-        <p id="info1"></p>
+        <p id="info">Your Score</p>
+        <p id="info1">Computer's Score</p>
     </div>
     
     <script src="script.js"></script>

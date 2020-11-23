@@ -45,7 +45,6 @@
                         else if(comptuterCard ===9) {document.getElementById("card-spot2").src="img/nine.png";}
                         else if(comptuterCard ===10) {document.getElementById("card-spot2").src="img/ten.png";}
                         return comptuterCard;
-
                     };
 
     let timesClicked=0;
@@ -55,6 +54,7 @@
     let fourthCard;
     let fifthCard;
     let sixthCard;
+    let seventhCard;
     document.getElementById("request").addEventListener("click",function() {
         timesClicked++;
         if (timesClicked===1) {
@@ -82,6 +82,10 @@
             sixthCard=drawCard();
             console.log(sixthCard);
         }
+        else if (timesClicked===7)  {
+            seventhCard=drawCard();
+            console.log(seventhCard);
+        }
     
     if(timesClicked===1) {document.getElementById("info").innerHTML=firstCard;}
     else if(timesClicked===2) {document.getElementById("info").innerHTML=firstCard+secondCard;}
@@ -89,6 +93,7 @@
     else if(timesClicked===4) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard+fourthCard;}
     else if(timesClicked===5) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard+fourthCard+fifthCard;}
     else if(timesClicked===6) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard+fourthCard+fifthCard+sixthCard;}
+    else if(timesClicked===7) {document.getElementById("info").innerHTML=firstCard+secondCard+thirdCard+fourthCard+fifthCard+sixthCard+seventhCard;}
 
     
 
@@ -101,6 +106,7 @@
     let fourthCard1;
     let fifthCard1;
     let sixthCard1;
+    let seventhCard1;
     document.getElementById("computer").addEventListener("click",function() {
         timesClicked1++;
         if (timesClicked1===1) {
@@ -127,8 +133,13 @@
         }
         else if (timesClicked1===6) {
             sixthCard1=computerDraw();
-            console.log(fifthCard1);
+            console.log(sixthCard1);
         }
+        else if (timesClicked1===7) {
+            seventhCard1=computerDraw();
+            console.log(seventhCard1);
+        }
+        
     
     if(timesClicked1===1) {document.getElementById("info1").innerHTML=firstCard1;}
     else if(timesClicked1===2) {document.getElementById("info1").innerHTML=firstCard1+secondCard1;}
@@ -136,19 +147,22 @@
     else if(timesClicked1===4) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1;}
     else if(timesClicked1===5) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1+fifthCard1;}
     else if(timesClicked1===6) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1+fifthCard1+sixthCard1;}
+    else if(timesClicked1===7) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1+fifthCard1+sixthCard1+seventhCard1;}
+
+    
 
     });
     document.getElementById("request").addEventListener("click",function() {
     var Result = document.getElementById("info").innerHTML;
-    if (Result===21) {alert("You've reach 21, you've won!")}
-    else if (Result>21) {alert("You've been been beyond 21, you've lost!")}
+    if (Result==21) {document.getElementById("info").innerHTML="You've reached acurately 21. You've won! ";}
+    else if (Result>21) {document.getElementById("info").innerHTML="You've been beyond 21, you've lost!! ";}
     
     });
 
     document.getElementById("computer").addEventListener("click",function() {
         var Result1 = document.getElementById("info1").innerHTML;
-        if (Result1===21) {alert("The computer has reached 21, you've lost!")}
-        else if (Result1>21) {alert("The computer has been beyond 21, you've won!")}
+        if (Result1==21) {document.getElementById("info").innerHTML="THe computer made it to 21. You've lost! ";}
+        else if (Result1>21) {document.getElementById("info").innerHTML="The computer has been beyond 21, you've won! ";}
         
         });
 
