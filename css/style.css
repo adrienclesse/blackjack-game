@@ -22,7 +22,7 @@
                 
         }
         100%{
-        transform: translateX(-1590px);    
+        transform: translateX(-1620px);    
         }
         
 
@@ -51,7 +51,7 @@ h2{
 }
 #anim{
     display : grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 40px;
     overflow: hidden;
 }
@@ -63,7 +63,7 @@ h2{
         margin-right: auto;
         height: 100px;
         width: 350px;
-        animation: anim 20s linear infinite;
+        animation: anim 32s linear infinite;
         background-repeat: repeat-x;
       }
 
@@ -73,9 +73,10 @@ h2{
         margin-right: auto;
         height: 100px;
         width: 350px;
-        animation: anim 20s linear infinite;
+        animation: anim 32s linear infinite;
         background-repeat: repeat-x;
 }
+
 
 .bj{
     display: block;
@@ -83,7 +84,17 @@ h2{
         margin-right: auto;
         height: 100px;
         width: 350px;
-        animation: anim 20s linear infinite;
+        animation: anim 32s linear infinite;
+        background-repeat: repeat-x;
+}
+
+.cards{
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        width: 350px;
+        animation: anim 32s linear infinite;
         background-repeat: repeat-x;
 }
 

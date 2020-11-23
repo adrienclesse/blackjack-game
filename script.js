@@ -149,19 +149,19 @@
     else if(timesClicked1===6) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1+fifthCard1+sixthCard1;}
     else if(timesClicked1===7) {document.getElementById("info1").innerHTML=firstCard1+secondCard1+thirdCard1+fourthCard1+fifthCard1+sixthCard1+seventhCard1;}
 
-    
+
 
     });
     document.getElementById("request").addEventListener("click",function() {
     var Result = document.getElementById("info").innerHTML;
-    if (Result==21) {document.getElementById("info").innerHTML="You've reached acurately 21. You've won! ";}
+    if (Result==21) {document.getElementById("info").innerHTML="You've reached acurately 21. You've won! ";} 
     else if (Result>21) {document.getElementById("info").innerHTML="You've been beyond 21, you've lost!! ";}
     
     });
 
     document.getElementById("computer").addEventListener("click",function() {
         var Result1 = document.getElementById("info1").innerHTML;
-        if (Result1==21) {document.getElementById("info").innerHTML="THe computer made it to 21. You've lost! ";}
+        if (Result1==21) {document.getElementById("info1").innerHTML="THe computer made it to 21. You've lost! ";}
         else if (Result1>21) {document.getElementById("info").innerHTML="The computer has been beyond 21, you've won! ";}
         
         });
